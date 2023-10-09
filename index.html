@@ -5,8 +5,15 @@
              "0/3","1/3","2/3","3/3",
              "0/4","1/4","2/4","3/4","4/4",
              "0/5","1/5","2/5","3/5","4/5","5/5",
-             "0/6","1/6","2/6","3/6","4/6","5/6","6/6"]
-  alert(pecas.sort());
+             "0/6","1/6","2/6","3/6","4/6","5/6","6/6"];
+  for(a=0;a<10;a++){
+    var s1=Math.floor(Math.random() * 27);
+    var s2=Math.floor(Math.random() * 27);
+    var troca=pecas[s1];
+    pecas[s1]=pecas[s2];
+    pecas[s2]=troca;
+
+  }
   alert("1-"+pecas[0]+" "+pecas[1]+" "+pecas[2]+" "+pecas[3]+" "+pecas[4]+" "+pecas[5]+" "+pecas[6]+"\n"+
         "2-"+pecas[7]+" "+pecas[8]+" "+pecas[9]+" "+pecas[10]+" "+pecas[11]+" "+pecas[12]+" "+pecas[13]+"\n"+
         "3-"+pecas[14]+" "+pecas[15]+" "+pecas[16]+" "+pecas[17]+" "+pecas[18]+" "+pecas[19]+" "+pecas[20]+"\n"+
